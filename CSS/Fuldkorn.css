@@ -1,0 +1,205 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+.page_body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 5px;
+    background-image: url(/Images/Ikke-angivet-1%20copy.png);
+    background-repeat: repeat;
+    background-size: contain;
+
+}
+
+/*---flexbox-----*/
+.forsidetekst_container {
+    background-color: #eff2ee;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.forside_billede {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #eff2ee;
+
+}
+
+.forside_tekst {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eff2ee;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.overskrift {
+    font-family: 'Farro', sans-serif;
+    text-align: center;
+    margin-top: 45px;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    background-color: #eff2ee;
+}
+
+.link {
+    padding-top: 10px;
+    text-align: center;
+    height: 40px;
+    width: 140px;
+    color: darkgreen;
+}
+
+.tekst {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    text-align-last: center;
+    background-color: #b4c9b0;
+}
+
+
+.liste {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 5px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #b4c9b0;
+    align-content: center;
+
+}
+
+.liste li {
+    margin-left: 30px;
+}
+
+
+/*---billeder---*/
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 10%;
+    padding: 5px;
+    width: 50%;
+}
+
+/*---Footer-----*/
+
+.page_footer {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    height: 12em;
+    text-align: center;
+    background-color: white;
+    font-family: 'Farro', sans-serif;
+    font-size: 12px;
+    color: black;
+    width: 60%;
+    position: relative;
+    padding: 10px;
+
+}
+
+.some_image {
+    width: 38px;
+    margin-right: 16px;
+}
+
+.footer_card_heading {
+    margin-bottom: 7px;
+}
+
+.footer_card:first-child .footer_card_heading {
+    margin-bottom: 16px;
+}
+
+
+
+
+
+@media only screen and (max-width:850px) {
+    .forside_billede {
+        width: 80%;
+    }
+
+
+    .forsidetekst_container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .forside_tekst {
+        width: 100%;
+
+    }
+
+    .navigation__container {
+        width: 100%;
+    }
+
+    .fuldkorns_logo {
+        margin-right: 20px;
+    }
+
+    .page_footer {
+        clear: both;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 13rem;
+
+
+    }
+
+    .footer_card {
+        width: 85%;
+        font-size: 12px;
+    }
+
+    .page_footer {
+        width: 100%;
+    }
+
+
+}
