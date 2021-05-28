@@ -45,6 +45,8 @@ html {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     background-color: #eff2ee;
+    text-align: justify;
+    text-align-last: center;
 
 
 }
